@@ -39,9 +39,8 @@ class TableroJuego {
             for (int i = 0; i < fila; i++) {
                 for (int j = 0; j < columna; j++) {
                     if (tableroNumero[i][j] == numero) { //No se como seguir en este punto...., pongo que el 1 es el número acertado ya que no me sale de otra manera
-                        tableroX[i][j] = '0';
+                        tableroX[i][j] = (char) (numero + '0') ;
                         encontrado = true;
-                        tableroX[i][j] = 1;
                         break;
                     }
                 }
